@@ -53,10 +53,12 @@ end
 #####################################################
 
 def runner
-  welcome
-  initial_round
-  prompt_user
-  get_user_input
-  hit?
+  while card_total < 21 {
+    welcome
+    initial_round
+    prompt_user
+    get_user_input
+    hit?
+  }
 end
     
