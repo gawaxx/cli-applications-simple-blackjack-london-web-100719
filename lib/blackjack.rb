@@ -36,7 +36,8 @@ def hit?(number)
     deal_card
     card_total += deal_card
   elsif get_user_input == 's'
-    deal_card
+    prompt_user
+    get_user_input
   else 
     invalid_command
     prompt_user
@@ -52,6 +53,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  prompt_user
+  get_user_input
+  hit?
 end
     
